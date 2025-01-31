@@ -19,7 +19,7 @@ async function events(
   },
 ) {
   if (
-    [">", "eval", "=>"].some((a) => m.command.toLowerCase().startsWith(a)) &&
+    ["eval", "=>"].some((a) => m.command.toLowerCase().startsWith(a)) &&
     m.isOwner
   ) {
     let evalCmd = "";
